@@ -12,7 +12,7 @@ class Repo:
 	
 	def cipher(self, key):
 		secret, iv = key[:32], key[48:] #hmm, some wasted entropy
-		return AES.new(secret, AES.MODE_CFB, iv)
+		return AES.new(secret, AES.MODE_CFB, iv) # let's make a change!!
 		
 
 	def encrypt(self, key, content):
